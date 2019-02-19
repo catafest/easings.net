@@ -1,0 +1,56 @@
+title: Relaxarea Functions Cheat Sheet
+description:
+  Face?i anima?iile mai realiste prin alegerea func?iei de relaxare potrivita.
+share:
+  Func?iile de relaxare specifica viteza anima?iei
+  pentru a face mi?carea mai naturala. Obiectele reale nu se mi?ca
+  la o viteza constanta ?i nu începe?i ?i nu opri?i într-o clipa.
+  Aceasta pagina va ajuta sa alege?i func?ia potrivita de relaxare.
+
+about: !!format
+  Func?iile de relaxare ~ specifica rata de schimbare a unui parametru
+  peste orar.
+
+  Obiectele din via?a reala nu pornesc ?i se opresc imediat ?i aproape niciodata
+  mi?ca?i cu o viteza constanta. Când deschidem un sertar, îl mutam mai întâi repede,
+  ?i încetini-o în timp ce iese. Arunca ceva pe podea ?i asta se va întâmpla
+  accelera?i mai întâi în jos ?i apoi sari?i înapoi dupa ce a?i lovit podeaua.
+
+  Aceasta pagina va ajuta sa alege?i func?ia potrivita de relaxare.
+
+easings:
+  css: Disponibil peste tot
+  js: Doar în JavaScript
+
+howtos:
+  name: relaxarea numelui
+  curve: curba Bezier de relaxare
+  js: !!code
+    jQuery cu pluginul ^ jQuery Easing ^ este cel mai simplu mod de a descrie
+    anima?ie cu relaxare. Trece?i numele de relaxare (ca `easeInCirc`)
+    la func?ia `.animate ()` ca al treilea argument sau folosi?i-o ca valoare
+    din op?iunea "relaxare".
+  scss: !!code
+    Sass / SCSS poate descrie ?i anima?iile! Compasul elimina prefixele înainte
+    proprieta?ile `transition '?i` anima?ie`, <nobr> ?i
+    ^ Compass Ceaser ^ </ nobr> va permite sa treci?i func?ia de relaxare dupa nume
+    (fara a specifica curbele Bezier exacte).
+  css: !!code
+    Proprieta?ile CSS "transition" ?i "animation" va permit sa alege?i relaxarea
+    functie.
+  css_bad:
+    Din pacate, ei nu accepta toate lucrurile ?i trebuie
+    specifica?i singura func?ia de relaxare dorita (ca o curba Bezier).
+  css_help:
+    Selecta?i o func?ie de relaxare pentru a afi?a nota?ia curbei Bezier.
+    easing:
+easing:
+  All_easings: Toate escalele
+  no_css: !!code
+    Nu este acceptat în CSS. Dar pute?i folosi în JS
+    sau scrie?i-l cu anima?ia CSS "@ keyframes".
+  edit: ^ Edit ^ pe cubic-bezier.com.
+
+opensource:
+  title: open source
+  traduce: ^ Ajuta?i sa traduce?i ^ site-ul în limba dvs.
